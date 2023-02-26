@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\Lathan\websites\personal\w3.css">
+<link rel="stylesheet" href="C:\Users\Lathan\websites\personal\w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="w3-bar w3-theme">
+  <a href="C:\Users\Lathan\websites\personal\index.html" class="w3-bar-item w3-button w3-padding-16">Home</a>
+  <a href="C:\Users\Lathan\websites\personal\about.html" class="w3-bar-item w3-button w3-padding-16">About Me</a>
+  <a href="C:\Users\Lathan\websites\personal\education.html" class="w3-bar-item w3-button w3-padding-16">Education</a>
+  <a href="C:\Users\Lathan\websites\personal\experience.html" class="w3-bar-item w3-button w3-padding-16">Certifications & Experience</a>
+  <a href="C:\Users\Lathan\websites\personal\services.html" class="w3-bar-item w3-button w3-padding-16">Document Services</a>
+  <a href="C:\Users\Lathan\websites\personal\Documents\Final Resume.pdf" class="w3-bar-item w3-button w3-padding-16">My Resume</a>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader"> 
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom">Lathan Birmingham</h1>
+  <h4>Cybersecurity Student, Document Services Professional, Junior Website Developer</h4>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-red w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Submit a Document Service Request</button>
+    </div>
+  </div>
+</header>
+
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4>Thank you for choosing me to take care of your document services.</h4>
+        <h5>Requests without an urgent deadline will be processed at a rate of $20 an hour. I am available 24/7 for urgent document services processed at a rate of $25 an hour. Urgent requests will be booked in for processing within in 1 hour of submission and will have a prioritized deadline according to your needs.</h5>
+      </header>
+      <div class="w3-padding">
+        <h2>Submit a Request</h2>
+        <div class="w3-half">
+          <input id="milk" class="w3-check" type="checkbox">
+          <label>Urgent Request</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Name</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Email</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Phone</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Describe your Request</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Estimated Deadline</label>
+        </div>
+        <a class="w3-button w3-theme">Submit Request</a>
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>Copyright © 2022 | Lathan Birmingham</p>
+      </footer>
+    </div>
+</div>
+
+<header class="w3-container w3-dark-grey">
+    <h2>Education</h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>Bellevue University</h2>
+  <h3>Bachelor of Science in Cybersecurity</h3>
+  <h4>June 2023</h4>
+  <h4>GPA: 3.0</h4>
+  <p>The National Security Agency and the Department of Homeland Security have designated Bellevue University as a National Center of Academic Excellence in Cyber Defense Education, (CAE-CDE).</p>
+
+</div>
+
+<div class="w3-container">
+<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Click here to view sample coursework I've completed for my Cybersecurity Degree</button>
+    <div id="Demo2" class="w3-hide">
+        <a href="C:\Users\Lathan\websites\personal\Documents\MITRE ATT&CK Framework Report Template.pdf" class="w3-button w3-block w3-left-align">MITRE ATT&CK Threat Assessment</a>
+        <a href="C:\Users\Lathan\websites\personal\Documents\Tabletop Exercise Case Study Template.pdf" class="w3-button w3-block w3-left-align">TableTop Exercise Report - Ransomware</a>
+        <a href="C:\Users\Lathan\websites\personal\Documents\API Infographic.pdf" class="w3-button w3-block w3-left-align">API Infographic</a>
+        <a href="C:\Users\Lathan\websites\personal\Documents\Incident Response Report.pdf" class="w3-button w3-block w3-left-align">Incident Response Report</a>
+        <a href="C:\Users\Lathan\websites\personal\Documents\Improving Security Posture with Forensics, SIEMs and EDRs.pptx" class="w3-button w3-block w3-left-align">Improving Security Posture with Forensics, SIEMs and EDRs</a>
+        <a href="C:\Users\Lathan\websites\personal\Documents\Pentest Report.pdf" class="w3-button w3-block w3-left-align">Penetration Test Report</a>
+        <a href="C:\Users\Lathan\websites\personal\Documents\Pentest Journal.pdf" class="w3-button w3-block w3-left-align">Penetration Test Journal</a>
+    </div>    
+<h2>Classes</h2>
+<p>Expand each class name to view a brief course overview along with cybersecurity tools I gained experience with for each class. Each course overview paragraph is taken directly from the Bellevue University website in order to provide the most accurate description possible.</p>
+    <button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Introduction to Cyber Threats, Technologies and Security</button>
+    <div id="Demo1" class="w3-hide">
+        <div class="w3-container">
+            <p>This course introduces information technologies and examines methods for protecting them against persistent and constantly evolving threats. Existing and emerging information technologies are discussed including operating environments, computer networking, and data management. Basic methods for managing information systems and technologies are presented from a standpoint of providing sufficient security protections.</p>
+        </div>
+    </div>    
+
+    <button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Introduction to Programming</button>
+    <div id="Demo3" class="w3-hide">
+        <div class="w3-container">
+            <h2>Course Overview</h2>
+            <p>This course provides an introduction to problem solving and computer programming using the language Python. Students will analyze problems, design and implement solutions and assess the results. Topics include fundamental programming constructs such as variables, expressions, functions, control structures and lists. Emphasis is placed on numerical and data analysis for informed decision making.</p>
+            <h2>Tools Used:</h2>
+            <ul>- Git/GitHub</ul>
+            <ul>- Python</ul>
+            <ul>- C++</ul>
+        </div>
+    </div>
+
+<button onclick="myAccFunc('Demo4')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Network Security</button>
+    <div id="Demo4" class="w3-hide">
+        <div class="w3-container">
+            <p>This course introduces the goals, functional processes, tools, and techniques associated with network security. Services such as firewalls, intrusion detection mechanisms and Virtual Private Networks (VPNs) will be studied. Students will develop an understanding of telecommunications and networks security protocols used to prevent, detect, and correct potential vulnerabilities associated with both the outsider and insider threat.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo5')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Securing Access Control</button>
+    <div id="Demo5" class="w3-hide">
+        <div class="w3-container">
+            <p>This course provides the student with the basic topics associated with controlling how resources are accessed in an information system. Topics include organizational access control models, security models, and hardware and software controls that can be used to support those models. Additional topics include access models, and securing system access with passwords, smart cards and biometric devices to assist in securing system access and ensure confidentiality, integrity, and availability of data. Technologies such as remote authentication and Public Key Infrastructure (PKI) are also explored.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo6')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Assessments and Audits</button>
+    <div id="Demo6" class="w3-hide">
+        <div class="w3-container">
+            <p>This course is intended to introduce students to the principles of risk assessment, vulnerability analysis, and auditing and how they are used to evaluate the effectiveness of information security controls. Students will develop an understanding of threat and asset identification, countermeasures and safeguards, acceptable risks, and vulnerabilities. The auditing concepts of technical, physical, and administrative controls will also be introduced along with how these controls are measured for effectiveness.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo7')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Operational Security</button>
+    <div id="Demo7" class="w3-hide">
+        <div class="w3-container">
+            <p>This course focuses on the skills required to operate a security program within an organization. Coverage includes the practical application of security practices in an operational environment. Topics that comprise this course include security structure, leading security projects, policy management, human factors of security, and physical security methods.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo8')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Operating Systems and Mobile Device Security</button>
+    <div id="Demo8" class="w3-hide">
+        <div class="w3-container">
+            <p>This course explores secure base operating systems on server, desktop, virtual, and mobile platforms. Topics include the practical application of security tools, utilities, and configurations for protecting computer operating systems at both the user and corporate level. Course subject is also related to protecting stand-alone and virtualized servers, cloud computing security, and the protection of mobile platforms such as smart phones, tablets and handheld computers.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo9')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Web, Commerce and Application Security</button>
+    <div id="Demo9" class="w3-hide">
+        <div class="w3-container">
+            <p>This course explores securing core technologies that support Internet applications and commerce. Processes for creating and administering Internet web sites to ensure proper protections are introduced. The course also addresses securing applications on Internet websites and mobile platforms, and introduces basic methods for secure development.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo10')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Data/Database Security</button>
+    <div id="Demo10" class="w3-hide">
+        <div class="w3-container">
+            <p>This course introduces the concepts of relational and non-relational database structures from a software developer perspective. Topics include defining key/value pairs, building table structures, manipulating records, using data types, and implementing access controls. The Structured Query Language (SQL) will be used to manipulate the models. Students will prepare a small application using a relational database management system. Prerequisite: CIS245 Introduction to Programming with Python.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo11')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Cyber Investigations and Foresnics</button>
+    <div id="Demo11" class="w3-hide">
+        <div class="w3-container">
+            <p>This course examines basic methods of investigation, information acquisition, and management of Internet and computer forensic cases. Topics include record-searching, note taking and report writing, and using scientific methodology in Cyber investigations. Coverage also includes basic tools and techniques for forensic analysis of computers, networks systems, and mobile devices.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo12')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Penetration Testing and Incident Response</button>
+    <div id="Demo12" class="w3-hide">
+        <div class="w3-container">
+            <p>This course provides an introduction to penetration testing and incident response tactics, techniques, and procedures. Topics include ethical and legal implications of penetration testing, network information gathering, system vulnerability analysis, common tools and techniques used in penetration testing, traffic analysis, incident response, and related defensive measures.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo13')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Intrusion Detection and Response</button>
+    <div id="Demo13" class="w3-hide">
+        <div class="w3-container">
+            <p>This course provides students with the knowledge and skills related to detecting and analyzing vulnerabilities and threats and taking steps to mitigate associated risks. Topics include incident response plans, managing cybersecurity incidents, log file analysis, anomaly detection, network security monitoring, host based and network-based intrusion detection and prevention, malware analysis and threat intelligence.</p>
+        </div>
+    </div>
+<button onclick="myAccFunc('Demo13')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Advanced Intrusion Detection and Response</button>
+    <div id="Demo13" class="w3-hide">
+        <div class="w3-container">
+            <p>This course continues students study of intrusion detection and response by providing students with the advanced knowledge and skills related to detecting and analyzing vulnerabilities and threats and responding to cybersecurity incidents. Topics include threat hunting and advanced threat intelligence, security automation, playbooks, machine learning for detection and response, log aggregation and correlation, incident response in the cloud, threat emulation, writing custom intrusion detection system rules and advanced malware analysis.</p>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+    <h4>Check me out on <a href="www.linkedin.com/in/lathan-birmingham" target="_blank">LinkedIn</a></h4>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+      <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+      <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+    <p>Copyright © 2023 | Lathan Birmingham</p>
+  </footer>
+  </body>
+  </html>
+  
+
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
