@@ -11,13 +11,12 @@
 <body>
 
 <!-- Navigation -->
-
 <div class="w3-bar w3-theme">
   <a href="C:\Users\Lathan\websites\personal\index.html" class="w3-bar-item w3-button w3-padding-16">Home</a>
   <a href="C:\Users\Lathan\websites\personal\about.html" class="w3-bar-item w3-button w3-padding-16">About Me</a>
   <a href="C:\Users\Lathan\websites\personal\education.html" class="w3-bar-item w3-button w3-padding-16">Education</a>
-  <a href="C:\Users\Lathan\websites\personal\experience.html" class="w3-bar-item w3-button w3-padding-16">Certifications & Experience</a>
-  <a href="C:\Users\Lathan\websites\personal\services.html" class="w3-bar-item w3-button w3-padding-16">Document Services</a>
+  <a href="C:\Users\Lathan\websites\personal\experience.html" class="w3-bar-item w3-button w3-padding-16">Certifications, Experience and Achievements</a>
+  <a href="C:\Users\Lathan\websites\personal\services.html" class="w3-bar-item w3-button w3-padding-16 w3-dark-grey">Document Services</a>
   <a href="C:\Users\Lathan\websites\personal\Documents\Final Resume.pdf" class="w3-bar-item w3-button w3-padding-16">My Resume</a>
   <a href="C:\Users\Lathan\websites\personal\sink.html" class="w3-bar-item w3-button w3-padding-16">Sink</a>
 </div>
@@ -77,6 +76,32 @@
 </div>
 <br>
 
+<div class="w3-container">
+  <p class="w3-left w3-padding">I have extensive experience both professionally and academically with the Microsoft Office Suite. I am capable of leading and handling even the most advanced projects using the Microsoft Suite. Learn more about my specific skillset by selecting a program below. I have also provided sample files that showcase my capabilities. Each project was built from scratch by me, but may include imported content/data for filler information. To clarify, the content in the files were not written by me but instead imported from the cited reference.<br><br><b>If you would like to submit a document service request, please use the red button above and I will get back to you within 1 day.</b></p>
+  <div class="w3-border">
+  <div class="w3-bar w3-theme">
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Word')">Microsoft Word</button>
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Excel')">Microsoft Excel</button>
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'PowerPoint')">Microsoft PowerPoint</button>
+  </div>
+  
+  <div id="Word" class="w3-container tab w3-animate-opacity">
+    <h2>Microsoft Word</h2>
+    <p>Description</p>
+  </div>
+  
+  <div id="Excel" class="w3-container tab w3-animate-opacity">
+    <h2>Microsoft Excel</h2>
+    <p>Description</p> 
+  </div>
+  
+  <div id="PowerPoint" class="w3-container tab w3-animate-opacity">
+    <h2>Microsoft PowerPoint</h2>
+    <p>Description</p>
+  </div>
+  </div>
+  <hr>
+
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-16">
   <h4>Check me out on <a href="https://www.linkedin.com/in/lathan-birmingham" target="_blank">LinkedIn</a></h4>
@@ -89,3 +114,23 @@
 </footer>
 </body>
 </html>
+
+<!-- Script for Tabs -->
+<script>
+function openTab(evt, tabName) {
+  var i;
+  var x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click()
+</script>

@@ -16,7 +16,7 @@
   <a href="C:\Users\Lathan\websites\personal\index.html" class="w3-bar-item w3-button w3-padding-16">Home</a>
   <a href="C:\Users\Lathan\websites\personal\about.html" class="w3-bar-item w3-button w3-padding-16">About Me</a>
   <a href="C:\Users\Lathan\websites\personal\education.html" class="w3-bar-item w3-button w3-padding-16">Education</a>
-  <a href="C:\Users\Lathan\websites\personal\experience.html" class="w3-bar-item w3-button w3-padding-16">Certifications & Experience</a>
+  <a href="C:\Users\Lathan\websites\personal\experience.html" class="w3-bar-item w3-button w3-padding-16 w3-dark-grey">Certifications, Experience and Achievements</a>
   <a href="C:\Users\Lathan\websites\personal\services.html" class="w3-bar-item w3-button w3-padding-16">Document Services</a>
   <a href="C:\Users\Lathan\websites\personal\Documents\Final Resume.pdf" class="w3-bar-item w3-button w3-padding-16">My Resume</a>
   <a href="C:\Users\Lathan\websites\personal\sink.html" class="w3-bar-item w3-button w3-padding-16">Sink</a>
@@ -77,34 +77,47 @@
 </div>
 <br>
 
-<h2 class="w3-center">Tabs</h2>
-<div class="w3-border">
-<div class="w3-bar w3-theme">
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">London</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Paris</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">Tokyo</button>
-</div>
-
-<div id="London" class="w3-container city w3-animate-opacity">
-  <h2>London</h2>
-  <p>London is the capital city of England.</p>
-  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-</div>
-
-<div id="Paris" class="w3-container city w3-animate-opacity">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p> 
-  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-</div>
-
-<div id="Tokyo" class="w3-container city w3-animate-opacity">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-  <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
-</div>
-</div>
-
-<br>
+  
+<div class="w3-container">
+  <h4 class="w3-left w3-padding">Select a tab to learn more about my certifications, experience, and academic achievements.</h4>
+  <div class="w3-border">
+  <div class="w3-bar w3-theme">
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Certifications')">Certifications</button>
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Experience')">Experience</button>
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openTab(event,'Achievements')">Academic Achievements</button>
+  </div>
+  
+  <div id="Certifications" class="w3-container tab w3-animate-opacity">
+    <h2>CompTIA ITF+</h2>
+    <h3>December, 2022</h3>
+    <p>The CompTIA IT Fundamentals exam proves that the candidate holds knowledge and skills required to identify and explain the basics of computing, IT infrastructure, application and software, software development, database fundamentals and security. </p>
+  </div>
+  
+  <div id="Experience" class="w3-container tab w3-animate-opacity">
+    <h2>Document Services Specialist</h2>
+    <h3>Epiq Global | Remote</h3>
+    <h4>February 2022 - Current</h4>
+    <p>Description</p> 
+  </div>
+  
+  <div id="Achievements" class="w3-container tab w3-animate-opacity">
+    <h2>Fall 2022 Dean's List</h2>
+    <h3>Bellevue University</h3>
+    <p>Description</p>
+    <hr>
+    <h2>Kappa Kappa Psi</h2>
+    <h3>Appalachian State University | 2019</h3>
+    <h4>Parliamentarian | 2020</h4>
+    <p>Kappa Kappa Psi empowers and influences the vibrant and diverse college band movement through purposeful programming, unified messaging, and excellence in service and operations. Brothers in this fraternity dedicate their time to serve the college/university band program. As an alumni brother of Kappa Kappa Psi, I believe that music is a universal language and truly the greatest of the arts.</p>
+    <p>Joining Kappa Kappa Psi empowered me to set an example to others by displaying unwaivering honor, integrity, respect, loyalty, responsibility, and leadership at all times. I served as the Parlimentarian for 2020, facilitating meetings with several brothers to discuss and amend bylaws. I was also responsible for planning and facilitating weekly fraternal meetings.</p>
+    <hr>
+    <h2>North Carolina Governor's School West</h2>
+    <h3>Instrumental Music | 2017</h3>
+    <p>The North Carolina Governor's School is a four-week summer residential program for gifted and talented high school students, integrating academic disciplines, the arts, and unique courses on each of two campuses. Learning focuses on the exploration of the most recent ideas and concepts in each discipline, and it does not involve credit, tests, or grades. Students are selected to attend through a competitive process after being nominated by their public school unit or non-public school.</p>
+    <p>NCGSW is the most impactful programs I've ever experienced. While attending, I was challenged to think critically in a ways that I never encountered previously. NCGSW put emphasis on contemporary ideas, topics, theories and techniques in both my primary discipline (instrumental music) as well as sociopolitical issues. NCGSW prepared me to respectfully discuss differing opinons and viewpoints of others. To say Governor's School was life changing is an understatement, it was absolutely incredible to be immersed in an environment that focuses on learning for the sake of learning, not grades or competitions. I am beyond grateful for the opportunity to participate in this program, it taught me the importance of fostering a community that accepts all people regardless of who they are.</p>
+  </div>
+  </div>
+  <hr>
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-16">
@@ -119,11 +132,11 @@
 </body>
 </html>
 
-// Script for Tabs
+<!-- Script for Tabs -->
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, tabName) {
   var i;
-  var x = document.getElementsByClassName("city");
+  var x = document.getElementsByClassName("tab");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
@@ -131,7 +144,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < x.length; i++) {
     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " w3-dark-grey";
 }
 
